@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back"
+    tools:context="com.londonappbrewery.climapm.WeatherController">
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:autoLink="web"
+        android:background="#80090909"
+        android:text="Search Historical Weather"
+        android:textColor="#FAF8F8"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/locationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Location"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/tempTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="140dp"
+        android:background="#800B0A0A"
+        android:text="&#8451;"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="100sp" />
+
+    <ImageButton
+        android:id="@+id/changeCityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        android:contentDescription="Search locarion"
+        android:src="@drawable/search" />
+
+    <FrameLayout
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        >
+
+        <ImageView
+            android:id="@+id/weatherSymbolIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#800C0C0C"
+            android:contentDescription="Weather Symbol"
+
+            android:src="@drawable/icon" />
+    </FrameLayout>
+
+</RelativeLayout>
